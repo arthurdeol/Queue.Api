@@ -1,0 +1,5 @@
+C:\Users\arthu\source\repos\queue.api\API\Queue.Tests\obj\Debug\net5.0\Queue.Tests.csprojAssemblyReference.cache
+C:\Users\arthu\source\repos\queue.api\API\Queue.Tests\obj\Debug\net5.0\Queue.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\arthu\source\repos\queue.api\API\Queue.Tests\obj\Debug\net5.0\Queue.Tests.AssemblyInfoInputs.cache
+C:\Users\arthu\source\repos\queue.api\API\Queue.Tests\obj\Debug\net5.0\Queue.Tests.AssemblyInfo.cs
+C:\Users\arthu\source\repos\queue.api\API\Queue.Tests\obj\Debug\net5.0\Queue.Tests.csproj.CoreCompileInputs.cache
