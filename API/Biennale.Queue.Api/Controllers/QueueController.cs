@@ -21,24 +21,53 @@ namespace API.Biennale.Queue.Api.Controllers
         [HttpPost("enqueue")]
         public ActionResult Enqueue(int id)
         {
-            _queryService.Enqueue(id);
-            return Ok();
+            try
+            {
+                _queryService.Enqueue(id);
+                return Ok();
+            }
+            catch(Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            
         }
-        [HttpPost("dequeue")]
+        [HttpGet("dequeue")]
         public ActionResult<int> Dequeue()
         {
-            return _queryService.Dequeue();
+            try
+            {
+               return _queryService.Dequeue();
+            }
+            catch(Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
         [HttpGet("peek")]
         public ActionResult<int> Peek()
         {
-            return _queryService.Peek();
+            try
+            {
+              return _queryService.Peek();
+            }
+            catch(Exception ex)
+            {
+              return BadRequest(ex.Message);
+            }
         }
         [HttpDelete("clear")]
         public ActionResult Clear()
         {
-            _queryService.Clear();
-            return Ok();
+            try
+            {
+                _queryService.Clear();
+                return Ok();
+            }
+            catch(Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
     }
 }
