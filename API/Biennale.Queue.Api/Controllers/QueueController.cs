@@ -18,7 +18,7 @@ namespace API.Biennale.Queue.Api.Controllers
             _queryService = queueService;
         }
 
-        [HttpGet("enqueue")]
+        [HttpPost("enqueue")]
         public ActionResult Enqueue(int id)
         {
             _queryService.Enqueue(id);
@@ -34,7 +34,7 @@ namespace API.Biennale.Queue.Api.Controllers
         {
             return _queryService.Peek();
         }
-        [HttpGet("clear")]
+        [HttpDelete("clear")]
         public ActionResult Clear()
         {
             _queryService.Clear();
