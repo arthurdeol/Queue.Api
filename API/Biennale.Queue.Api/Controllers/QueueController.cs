@@ -24,7 +24,7 @@ namespace API.Biennale.Queue.Api.Controllers
             _queryService.Enqueue(id);
             return Ok();
         }
-        [HttpGet("dequeue")]
+        [HttpPost("dequeue")]
         public ActionResult<int> Dequeue()
         {
             return _queryService.Dequeue();
