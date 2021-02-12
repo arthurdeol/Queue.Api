@@ -15,6 +15,9 @@ bld/
 [Ll]og/
 [Ll]ogs/
 
+bin/Debug/net5.0
+
+
 
 # .NET Core
 project.lock.json
