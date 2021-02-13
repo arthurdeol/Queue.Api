@@ -1,9 +1,5 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using API.Biennale.Queue.Api.Interfaces;
-using Biennale.Queue.Api;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Biennale.Queue.Api.Controllers
@@ -32,7 +28,7 @@ namespace API.Biennale.Queue.Api.Controllers
             }
             
         }
-        [HttpGet("dequeue")]
+        [HttpPost("dequeue")]
         public ActionResult<int> Dequeue()
         {
             try

@@ -63,14 +63,14 @@ namespace API.Biennale.Queue.Api.Services
             }
         }
 
-        public static IEnumerable<int> StringToIntList(string str) 
+        private static IEnumerable<int> StringToIntList(string queue) 
         {
-            if (String.IsNullOrEmpty(str))
+            if (String.IsNullOrEmpty(queue))
                  yield break;
 
-            foreach(var s in str.Split(',')) {
+            foreach(var id in queue.Split(',')) {
                 int num;
-                if (int.TryParse(s, out num))
+                if (int.TryParse(id, out num))
                     yield return num;
             }
         }
